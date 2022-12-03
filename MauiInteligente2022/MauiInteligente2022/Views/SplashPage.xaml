@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<controls:BindedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiInteligente2022.Views.SplashPage"
+             xmlns:controls="clr-namespace:MauiInteligente2022.AppBase.Controls">
+
+    <Grid RowDefinitions="80*,20*">
+
+        <Image Grid.Row="0" 
+               x:Name="splashLogo" 
+               Source="splash"/>
+
+        <Label Grid.Row="1" 
+               Text="Cargando..." 
+               FontSize="Title" 
+               TextColor="{DynamicResource MainColor}"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"/>
+
+    </Grid>
+    
+</controls:BindedPage>

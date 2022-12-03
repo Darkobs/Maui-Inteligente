@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<controls:BindedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
              x:Class="MauiInteligente2022.Views.LoginPage"
              xmlns:vm="clr-namespace:MauiInteligente2022.ViewModels"
-             Title="{Binding Title}">
+             xmlns:controls="clr-namespace:MauiInteligente2022.AppBase.Controls"
+             >
 
     <d:ContentPage.BindingContext>
         <vm:LoginViewModel/>
@@ -20,4 +21,5 @@
             </VerticalStackLayout>
         </Border>
     </VerticalStackLayout>
-</ContentPage>
+
+</controls:BindedPage>
