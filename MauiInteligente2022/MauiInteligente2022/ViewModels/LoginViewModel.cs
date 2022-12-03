@@ -5,9 +5,9 @@ public class LoginViewModel : BaseViewModel
 {
     public LoginViewModel() 
     {
-        Title = "Inicio de sesión";
-        SubTitle = "Bienvenido";
-        PageId = LOGIN_PAGE;
+        Title = Resources.LoginTitle;
+        SubTitle = Resources.LoginSubtitle;
+        PageId = LOGIN_PAGE_ID;
 
         LoginCommand = new(async () => LoginAsync(), () => !IsNullOrWhiteSpace(_userName) && !IsNullOrWhiteSpace(_password));
     }

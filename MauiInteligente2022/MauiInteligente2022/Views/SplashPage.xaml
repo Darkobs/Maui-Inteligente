@@ -2,7 +2,8 @@
 <controls:BindedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiInteligente2022.Views.SplashPage"
-             xmlns:controls="clr-namespace:MauiInteligente2022.AppBase.Controls">
+             xmlns:controls="clr-namespace:MauiInteligente2022.AppBase.Controls"
+             xmlns:res="clr-namespace:MauiInteligente2022.Localization">
 
     <Grid RowDefinitions="80*,20*">
 
@@ -11,7 +12,7 @@
                Source="splash"/>
 
         <Label Grid.Row="1" 
-               Text="Cargando..." 
+               Text="{x:Static res:Resources.SplashWelcome}" 
                FontSize="Title" 
                TextColor="{DynamicResource MainColor}"
                HorizontalOptions="Center"

@@ -60,6 +60,8 @@ public abstract class BindedPage : ContentPage
 
     protected override void OnBindingContextChanged()
     {
+		base.OnBindingContextChanged();
+
 		Binding titleBinding = new("Title");
 		SetBinding(TitleProperty, titleBinding);
 

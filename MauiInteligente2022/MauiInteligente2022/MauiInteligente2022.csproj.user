@@ -11,10 +11,16 @@
     <MauiXaml Update="AppBase\Controls\Resources\ControlsResources.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\LanguageSelectionPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\LoginPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\SplashPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\TermsAndConditionsPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

@@ -25,7 +25,11 @@ public static class MauiProgram
 		builder.Services.AddTransient<LoginPage>()
 						.AddTransient<LoginViewModel>()
 						.AddTransient<SplashPage>()
-						.AddTransient<SplashViewModel>();
+						.AddTransient<SplashViewModel>()
+						.AddTransient<LanguageSelectionPage>()
+						.AddTransient<LanguageSelectionViewModel>()
+						.AddTransient<TermsAndConditionsPage>()
+						.AddTransient<TermsAndConditionsViewModel>();
 
 #if DEBUG
         builder.Logging.AddDebug();
