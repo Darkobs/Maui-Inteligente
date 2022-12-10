@@ -2,10 +2,10 @@
 
 public partial class App : Application
 {
-	public App(SplashPage splashPage)
+	public App(SignUpPage splashPage)
 	{
 		InitializeComponent();
 
-		MainPage = splashPage;
+		MainPage = new NavigationPage(splashPage);
 	}
 }

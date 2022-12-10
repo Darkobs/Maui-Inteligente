@@ -9,7 +9,10 @@ public class LoginViewModel : BaseViewModel
         SubTitle = Resources.LoginSubtitle;
         PageId = LOGIN_PAGE_ID;
 
-        LoginCommand = new(async () => LoginAsync(), () => !IsNullOrWhiteSpace(_userName) && !IsNullOrWhiteSpace(_password));
+        LoginCommand = new(async () => LoginAsync(), () => {
+            CanExecuteLogin = !IsNullOrWhiteSpace(_userName) && !IsNullOrWhiteSpace(_password);
+            return CanExecuteLogin;
+        });
     }
 
     private string _userName;
@@ -26,6 +29,14 @@ public class LoginViewModel : BaseViewModel
     {
         get => _password;
         set => SetProperty(ref _password, value, onChanged: () => LoginCommand.ChangeCanExecute());
+    }
+
+    private bool canExecuteLogin;
+
+    public bool CanExecuteLogin
+    {
+        get => canExecuteLogin;
+        set => SetProperty(ref canExecuteLogin, value, onChanged: () => LoginCommand.ChangeCanExecute());
     }
 
     public Command LoginCommand { get; set; }

@@ -29,7 +29,9 @@ public static class MauiProgram
 						.AddTransient<LanguageSelectionPage>()
 						.AddTransient<LanguageSelectionViewModel>()
 						.AddTransient<TermsAndConditionsPage>()
-						.AddTransient<TermsAndConditionsViewModel>();
+						.AddTransient<TermsAndConditionsViewModel>()
+						.AddTransient<SignUpPage>()
+						.AddTransient<SignUpViewModel>();
 
 #if DEBUG
         builder.Logging.AddDebug();

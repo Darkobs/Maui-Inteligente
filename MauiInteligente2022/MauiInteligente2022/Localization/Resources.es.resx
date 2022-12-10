@@ -126,6 +126,9 @@
   <data name="LoginButton" xml:space="preserve">
     <value>Iniciar</value>
   </data>
+  <data name="LoginPasswordError" xml:space="preserve">
+    <value>Debes esribir una contraseña</value>
+  </data>
   <data name="LoginPasswordPlaceHolder" xml:space="preserve">
     <value>Contraseña</value>
   </data>
@@ -135,11 +138,38 @@
   <data name="LoginTitle" xml:space="preserve">
     <value>Iniciar Sesión</value>
   </data>
+  <data name="LoginUserError" xml:space="preserve">
+    <value>Debes escribir un usuario</value>
+  </data>
   <data name="LoginUserPlaceHolder" xml:space="preserve">
     <value>Usuario</value>
   </data>
   <data name="NextButton" xml:space="preserve">
     <value>Siguiente</value>
+  </data>
+  <data name="SignUpAddressPlaceholder" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="SignUpCreateButton" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="SignUpCredentials" xml:space="preserve">
+    <value>Datos de acceso</value>
+  </data>
+  <data name="SignUpEmailPlaceholder" xml:space="preserve">
+    <value>Correo Electrónico</value>
+  </data>
+  <data name="SignUpPasswordPlaceholder" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="SignUpPersonalData" xml:space="preserve">
+    <value>Datos Personales</value>
+  </data>
+  <data name="SignUpPhonePlaceholder" xml:space="preserve">
+    <value>Número de Teléfono</value>
+  </data>
+  <data name="SignUpUserPlaceholder" xml:space="preserve">
+    <value>Nombre de usuario</value>
   </data>
   <data name="SplashWelcome" xml:space="preserve">
     <value>Espera un momento...</value>

@@ -16,9 +16,53 @@
         <Image Source="login_user" HeightRequest="200" WidthRequest="200" HorizontalOptions="Center"/>
         <Border Padding="5" StrokeThickness="4" StrokeShape="RoundRectangle 10">
             <VerticalStackLayout Spacing="15">
-                <Entry Placeholder="{x:Static res:Resources.LoginUserPlaceHolder}" Text="{Binding UserName}"/>
-                <Entry Placeholder="{x:Static res:Resources.LoginPasswordPlaceHolder}" Text="{Binding Password}" IsPassword="True"/>
-                <Button Text="{x:Static res:Resources.LoginButton}" Command="{Binding LoginCommand}"/>
+                <Entry x:Name="userEntry" Placeholder="{x:Static res:Resources.LoginUserPlaceHolder}" Text="{Binding UserName}">
+                    <Entry.Triggers>
+                        <Trigger TargetType="Entry" Property="IsFocused" Value="true">
+                            <Setter Property="TextColor" Value="{DynamicResource Primary}"/>
+                        </Trigger>
+                    </Entry.Triggers>
+                </Entry>
+
+                <Label Text="{x:Static res:Resources.LoginUserError}" TextColor="{DynamicResource ErrorColor}" IsVisible="false">
+                    <Label.Triggers>
+                        <DataTrigger TargetType="Label" 
+                                     Binding="{Binding Source={x:Reference userEntry}, Path=Text.Length}"
+                                     Value="0">
+                            <Setter Property="IsVisible" Value="true"/>
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
+                
+                <Entry x:Name="passwordEntry" Placeholder="{x:Static res:Resources.LoginPasswordPlaceHolder}" Text="{Binding Password}" IsPassword="True"/>
+
+                <Label Text="{x:Static res:Resources.LoginPasswordError}" TextColor="{DynamicResource ErrorColor}" IsVisible="false">
+                    <Label.Triggers>
+                        <DataTrigger TargetType="Label" 
+                                     Binding="{Binding Source={x:Reference passwordEntry}, Path=Text.Length}"
+                                     Value="0">
+                            <Setter Property="IsVisible" Value="true"/>
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
+
+                <Button Text="{x:Static res:Resources.LoginButton}" Command="{Binding LoginCommand}" IsVisible="{Binding CanExecuteLogin}">
+                    <!--<Button.Triggers>
+                        <Trigger TargetType="Button" Property="IsEnable" Value="True">
+                            <Setter Property="IsVisible" Value="True"/>
+                        </Trigger>-->
+                        <!--<MultiTrigger TargetType="Button">
+                            <MultiTrigger.Conditions>
+                                <BindingCondition Binding="{Binding Source={x:Reference userEntry}, Path=Text.Length}"
+                                                  Value="1"/>
+                                <BindingCondition Binding="{Binding Source={x:Reference passwordEntry}, Path=Text.Length}"
+                                                  Value="1"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="IsVisible" Value="true"/>
+                        </MultiTrigger>-->
+                    <!--</Button.Triggers>-->
+                </Button>
+
             </VerticalStackLayout>
         </Border>
     </VerticalStackLayout>

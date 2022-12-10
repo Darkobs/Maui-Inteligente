@@ -88,6 +88,15 @@ namespace MauiInteligente2022.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Must write a password.
+        /// </summary>
+        internal static string LoginPasswordError {
+            get {
+                return ResourceManager.GetString("LoginPasswordError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Password.
         /// </summary>
         internal static string LoginPasswordPlaceHolder {
@@ -115,6 +124,15 @@ namespace MauiInteligente2022.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Must write a user name.
+        /// </summary>
+        internal static string LoginUserError {
+            get {
+                return ResourceManager.GetString("LoginUserError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to User.
         /// </summary>
         internal static string LoginUserPlaceHolder {
@@ -129,6 +147,78 @@ namespace MauiInteligente2022.Localization {
         internal static string NextButton {
             get {
                 return ResourceManager.GetString("NextButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Address.
+        /// </summary>
+        internal static string SignUpAddressPlaceholder {
+            get {
+                return ResourceManager.GetString("SignUpAddressPlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create.
+        /// </summary>
+        internal static string SignUpCreateButton {
+            get {
+                return ResourceManager.GetString("SignUpCreateButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Credentials.
+        /// </summary>
+        internal static string SignUpCredentials {
+            get {
+                return ResourceManager.GetString("SignUpCredentials", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to E-Mail.
+        /// </summary>
+        internal static string SignUpEmailPlaceholder {
+            get {
+                return ResourceManager.GetString("SignUpEmailPlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        internal static string SignUpPasswordPlaceholder {
+            get {
+                return ResourceManager.GetString("SignUpPasswordPlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Personal Info.
+        /// </summary>
+        internal static string SignUpPersonalData {
+            get {
+                return ResourceManager.GetString("SignUpPersonalData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone Number.
+        /// </summary>
+        internal static string SignUpPhonePlaceholder {
+            get {
+                return ResourceManager.GetString("SignUpPhonePlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User.
+        /// </summary>
+        internal static string SignUpUserPlaceholder {
+            get {
+                return ResourceManager.GetString("SignUpUserPlaceholder", resourceCulture);
             }
         }
         
