@@ -45,6 +45,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\correct.svg" />
+	  <None Remove="Resources\Images\incorrect.svg" />
 	  <None Remove="Resources\Images\login_user.svg" />
 	  <None Remove="Resources\Images\splash.svg" />
 	  <None Remove="Resources\Raw\TermsAndConditionsEN.html" />

@@ -168,6 +168,12 @@
   <data name="SignUpPhonePlaceholder" xml:space="preserve">
     <value>Phone Number</value>
   </data>
+  <data name="SignUpSubtitle" xml:space="preserve">
+    <value>Signup</value>
+  </data>
+  <data name="SignUpTitle" xml:space="preserve">
+    <value>New User</value>
+  </data>
   <data name="SignUpUserPlaceholder" xml:space="preserve">
     <value>User</value>
   </data>
