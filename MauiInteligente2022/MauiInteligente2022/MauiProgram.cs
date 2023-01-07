@@ -33,6 +33,12 @@ public static class MauiProgram
 						.AddTransient<SignUpPage>()
 						.AddTransient<SignUpViewModel>();
 
+		builder.Services.AddHttpClient<SignUpViewModel>(client =>
+		{
+			client.Timeout = TimeSpan.FromSeconds(40);
+			client.BaseAddress = new("https://apinetmauinteligente22.azurewebsites.net");
+		});
+
 #if DEBUG
         builder.Logging.AddDebug();
 #endif

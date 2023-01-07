@@ -1,17 +1,58 @@
 ﻿using MauiInteligente2022.AppBase.Validations;
+using System.Net.Http.Json;
 
 namespace MauiInteligente2022.ViewModels;
 
 public class SignUpViewModel : BaseViewModel
 {
-	public SignUpViewModel()
+    private readonly HttpClient signupHttpClient;
+	public SignUpViewModel(HttpClient signupHttpClient)
 	{
 		PageId = SIGNUP_PAGE_ID;
 		Title = Resources.SignUpTitle;
 		SubTitle = Resources.SignUpSubtitle;
+        CreateUserCommand = new(async () => await CreateUser(), () => IsValid);
+        this.signupHttpClient = signupHttpClient;
 	}
 
-	private string userName;
+    #region Commands
+    public Command CreateUserCommand { get; set; }
+
+    public Command CancelCommand { get; set; }
+
+    record NewUserDTO(string UserName, string Password, string Email, string PhoneNumber, string Address);
+
+    private async Task CreateUser()
+    {
+        if(!IsBusy) 
+        {   
+            IsBusy = true;
+
+            NewUserDTO newUser = new(UserName, Password, Email, PhoneNumber, Address);
+
+            HttpResponseMessage httpResponse =
+                await signupHttpClient.PostAsJsonAsync("/auth/register", newUser);
+
+            if(httpResponse.IsSuccessStatusCode) 
+            {
+                await Application.Current.MainPage.DisplayAlert(Resources.SignUpUserAlertTitle,
+                                                            Resources.SignUpAlertSuccessUserCreation,
+                                                            Resources.AcceptButton);
+                CleanData();
+            }
+            else
+                await Application.Current.MainPage.DisplayAlert(Resources.SignUpUserAlertTitle, 
+                                                                Resources.SignUpAlertErrorUserCreation, 
+                                                                Resources.AcceptButton);
+
+            IsBusy = false;
+        }
+    }
+
+    #endregion
+
+    #region UserData
+    private string userName;
 
 	public string UserName
 	{
@@ -53,13 +94,15 @@ public class SignUpViewModel : BaseViewModel
 
     private void CleanData()
     {
-        UserName = string.Empty;
-        Password = string.Empty;
-        Address = string.Empty;
-        Email = string.Empty;
-        PhoneNumber = string.Empty;
+        UserName = null;
+        Password = null;
+        Address = null;
+        Email = null;
+        PhoneNumber = null;
     }
+    #endregion
 
+    #region Validations
     private ValidationResult userNameValidationResult;
 
     public ValidationResult UserNameValidationResult
@@ -105,13 +148,37 @@ public class SignUpViewModel : BaseViewModel
     public bool IsValid
     {
         get => isValid;
-        set => SetProperty(ref isValid, value);
+        set => SetProperty(ref isValid, value, onChanged: () => CreateUserCommand.ChangeCanExecute());
     }
 
-    private void ValidateAll() =>
+    private string errorMessage;
+
+    public string ErrorMessage
+    {
+        get => errorMessage;
+        set => SetProperty(ref errorMessage, value);
+    }
+
+    private void ValidateAll()
+    {
         IsValid = UserNameValidationResult == ValidationResult.Valid
-        && PasswordValidationResult == ValidationResult.Valid
-        && AddressValidationResult == ValidationResult.Valid
-        && EmailValidationResult == ValidationResult.Valid
-        && PhoneNumberValidationResult == ValidationResult.Valid;
+                && PasswordValidationResult == ValidationResult.Valid
+                && AddressValidationResult == ValidationResult.Valid
+                && EmailValidationResult == ValidationResult.Valid
+                && PhoneNumberValidationResult == ValidationResult.Valid;
+
+        if (UserNameValidationResult == ValidationResult.Invalid)
+            ErrorMessage = Resources.SignUpInvalidUserNameMessage;
+        else if (PasswordValidationResult == ValidationResult.Invalid)
+            ErrorMessage = Resources.SignUpInvalidPasswordMessage;
+        else if (AddressValidationResult == ValidationResult.Invalid)
+            ErrorMessage = Resources.SignUpInvalidAddressMessage;
+        else if (EmailValidationResult == ValidationResult.Invalid)
+            ErrorMessage = Resources.SignUpInvalidEmailMessage;
+        else if (PhoneNumberValidationResult == ValidationResult.Invalid)
+            ErrorMessage = Resources.SignUpInvalidPhoneMessage;
+        else
+            ErrorMessage = string.Empty;
+    }  
+    #endregion
 }

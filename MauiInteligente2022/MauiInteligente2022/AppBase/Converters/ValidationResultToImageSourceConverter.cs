@@ -10,7 +10,7 @@ public class ValidationResultToImageSourceConverter : IValueConverter
         {
             return validationResult switch
             {
-                ValidationResult.None => null,
+                ValidationResult.None => ImageSource.FromFile(""),
                 ValidationResult.Valid => ImageSource.FromFile("correct"),
                 ValidationResult.Invalid => ImageSource.FromFile("incorrec"),
                 _ => null

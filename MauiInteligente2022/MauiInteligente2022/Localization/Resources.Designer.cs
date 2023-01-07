@@ -61,6 +61,15 @@ namespace MauiInteligente2022.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Accept.
+        /// </summary>
+        internal static string AcceptButton {
+            get {
+                return ResourceManager.GetString("AcceptButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to English.
         /// </summary>
         internal static string LanguagePageSubtitle {
@@ -160,6 +169,24 @@ namespace MauiInteligente2022.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to There was an error during user creation.
+        /// </summary>
+        internal static string SignUpAlertErrorUserCreation {
+            get {
+                return ResourceManager.GetString("SignUpAlertErrorUserCreation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User was created successfully.
+        /// </summary>
+        internal static string SignUpAlertSuccessUserCreation {
+            get {
+                return ResourceManager.GetString("SignUpAlertSuccessUserCreation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create.
         /// </summary>
         internal static string SignUpCreateButton {
@@ -183,6 +210,56 @@ namespace MauiInteligente2022.Localization {
         internal static string SignUpEmailPlaceholder {
             get {
                 return ResourceManager.GetString("SignUpEmailPlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Must write an address.
+        /// </summary>
+        internal static string SignUpInvalidAddressMessage {
+            get {
+                return ResourceManager.GetString("SignUpInvalidAddressMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Must write a valid email.
+        /// </summary>
+        internal static string SignUpInvalidEmailMessage {
+            get {
+                return ResourceManager.GetString("SignUpInvalidEmailMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The password must meet the following requirements:
+        ///- At least 1 lowercase
+        ///- At least 1 uppercase
+        ///- At least 1 number
+        ///- At least 1 special character @$!%*?&amp;
+        ///- The minimum length is 8 characters.
+        /// </summary>
+        internal static string SignUpInvalidPasswordMessage {
+            get {
+                return ResourceManager.GetString("SignUpInvalidPasswordMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The phone number must have the format +521234567890.
+        /// </summary>
+        internal static string SignUpInvalidPhoneMessage {
+            get {
+                return ResourceManager.GetString("SignUpInvalidPhoneMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Must write a user name.
+        /// </summary>
+        internal static string SignUpInvalidUserNameMessage {
+            get {
+                return ResourceManager.GetString("SignUpInvalidUserNameMessage", resourceCulture);
             }
         }
         
@@ -228,6 +305,15 @@ namespace MauiInteligente2022.Localization {
         internal static string SignUpTitle {
             get {
                 return ResourceManager.GetString("SignUpTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Signup.
+        /// </summary>
+        internal static string SignUpUserAlertTitle {
+            get {
+                return ResourceManager.GetString("SignUpUserAlertTitle", resourceCulture);
             }
         }
         

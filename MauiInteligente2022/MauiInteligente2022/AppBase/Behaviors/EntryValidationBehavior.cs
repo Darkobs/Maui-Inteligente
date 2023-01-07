@@ -16,11 +16,9 @@ public class EntryValidationBehavior : Behavior<Entry>
     {
         get => (ValidationResult)GetValue(IsValidProperty);
         private set => SetValue(IsValidPropertyKey, value);
-    }
-    
-    
+    }   
 
-static readonly BindableProperty ValidationTypeProperty =
+    static readonly BindableProperty ValidationTypeProperty =
         BindableProperty.Create(nameof(ValidationType), typeof(ValidationType), typeof(EntryValidationBehavior),
             ValidationType.None, defaultBindingMode: BindingMode.OneWay);
 
@@ -40,9 +38,15 @@ static readonly BindableProperty ValidationTypeProperty =
     {
         var entry = sender as Entry;
 
-        IsValid = ValidationsHelper.ValidateString(ValidationType, entry.Text);
-
-        entry.TextColor = IsValid == ValidationResult.Valid ? Colors.Black : Colors.Red;
+        if(entry.Text is not null)
+        { 
+            IsValid = ValidationsHelper.ValidateString(ValidationType, entry.Text);
+            entry.TextColor = IsValid == ValidationResult.Valid ? Colors.Black : Colors.Red;
+        }
+        else
+        {
+            IsValid = ValidationResult.None;
+        } 
     }
 
     private void Bindable_BindingContextChanged(object sender, EventArgs e)

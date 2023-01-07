@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AcceptButton" xml:space="preserve">
+    <value>Accept</value>
+  </data>
   <data name="LanguagePageSubtitle" xml:space="preserve">
     <value>English</value>
   </data>
@@ -150,6 +153,12 @@
   <data name="SignUpAddressPlaceholder" xml:space="preserve">
     <value>Address</value>
   </data>
+  <data name="SignUpAlertErrorUserCreation" xml:space="preserve">
+    <value>There was an error during user creation</value>
+  </data>
+  <data name="SignUpAlertSuccessUserCreation" xml:space="preserve">
+    <value>User was created successfully</value>
+  </data>
   <data name="SignUpCreateButton" xml:space="preserve">
     <value>Create</value>
   </data>
@@ -158,6 +167,26 @@
   </data>
   <data name="SignUpEmailPlaceholder" xml:space="preserve">
     <value>E-Mail</value>
+  </data>
+  <data name="SignUpInvalidAddressMessage" xml:space="preserve">
+    <value>Must write an address</value>
+  </data>
+  <data name="SignUpInvalidEmailMessage" xml:space="preserve">
+    <value>Must write a valid email</value>
+  </data>
+  <data name="SignUpInvalidPasswordMessage" xml:space="preserve">
+    <value>The password must meet the following requirements:
+- At least 1 lowercase
+- At least 1 uppercase
+- At least 1 number
+- At least 1 special character @$!%*?&amp;
+- The minimum length is 8 characters</value>
+  </data>
+  <data name="SignUpInvalidPhoneMessage" xml:space="preserve">
+    <value>The phone number must have the format +521234567890</value>
+  </data>
+  <data name="SignUpInvalidUserNameMessage" xml:space="preserve">
+    <value>Must write a user name</value>
   </data>
   <data name="SignUpPasswordPlaceholder" xml:space="preserve">
     <value>Password</value>
@@ -173,6 +202,9 @@
   </data>
   <data name="SignUpTitle" xml:space="preserve">
     <value>New User</value>
+  </data>
+  <data name="SignUpUserAlertTitle" xml:space="preserve">
+    <value>Signup</value>
   </data>
   <data name="SignUpUserPlaceholder" xml:space="preserve">
     <value>User</value>

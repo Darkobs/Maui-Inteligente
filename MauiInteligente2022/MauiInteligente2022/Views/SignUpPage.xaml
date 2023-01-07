@@ -12,6 +12,8 @@
 
     <ContentPage.Resources>
         <cvt:ValidationResultToImageSourceConverter x:Key="validToImgCvt" />
+        <cvt:ValidationResultToBoolConverter x:Key="validToBoolCvt" />
+        <cvt:EmptyToBoolConverter x:Key="emptyToBoolCvt" />
         <Style TargetType="Label" x:Key="SectionTitle">
             <Setter Property="FontSize" Value="20"/>
             <Setter Property="TextColor" Value="{DynamicResource White}"/>
@@ -22,7 +24,7 @@
     </ContentPage.Resources>
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="{x:Static res:Resources.SignUpCreateButton}"/>
+        <ToolbarItem Text="{x:Static res:Resources.SignUpCreateButton}" Command="{Binding CreateUserCommand}"/>
     </ContentPage.ToolbarItems>
 
     <ScrollView>
@@ -58,14 +60,18 @@
                         </Entry.Behaviors>
                     </Entry>
 
-                    <Image Grid.Row="1" Grid.Column="1" HeightRequest="30" WidthRequest="30" Source="{Binding UserNameValidationResult, Converter={StaticResource validToImgCvt}}"/>
+                    <Image Grid.Row="1" Grid.Column="1" HeightRequest="30" WidthRequest="30" 
+                           IsVisible="{Binding UserNameValidationResult, Converter={x:StaticResource validToBoolCvt}}"
+                           Source="{Binding UserNameValidationResult, Converter={StaticResource validToImgCvt}}"/>
 
                     <Entry Grid.Row="2" Grid.Column="0" Placeholder="{x:Static res:Resources.SignUpPasswordPlaceholder}" IsPassword="True" Text="{Binding Password}">
                         <Entry.Behaviors>
                             <bhv:EntryValidationBehavior ValidationType="Password" IsValid="{Binding PasswordValidationResult}"/>
                         </Entry.Behaviors>
                     </Entry>
-                    <Image Grid.Row="2" Grid.Column="1" HeightRequest="30" WidthRequest="30" Source="{Binding PasswordValidationResult, Converter={StaticResource validToImgCvt}}"/>
+                    <Image Grid.Row="2" Grid.Column="1" HeightRequest="30" WidthRequest="30" 
+                           IsVisible="{Binding PasswordValidationResult, Converter={x:StaticResource validToBoolCvt}}"
+                           Source="{Binding PasswordValidationResult, Converter={StaticResource validToImgCvt}}"/>
 
                 </Grid>
 
@@ -100,26 +106,50 @@
                             <bhv:EntryValidationBehavior ValidationType="Empty" IsValid="{Binding AddressValidationResult}"/>
                         </Entry.Behaviors>
                     </Entry>
-                    <Image Grid.Row="1" Grid.Column="1" HeightRequest="30" WidthRequest="30" Source="{Binding AddressValidationResult, Converter={StaticResource validToImgCvt}}"/>
+                    <Image Grid.Row="1" Grid.Column="1" HeightRequest="30" WidthRequest="30" 
+                           IsVisible="{Binding AddressValidationResult, Converter={x:StaticResource validToBoolCvt}}"
+                           Source="{Binding AddressValidationResult, Converter={StaticResource validToImgCvt}}"/>
 
                     <Entry Grid.Row="2" Grid.Column="0" Placeholder="{x:Static res:Resources.SignUpPhonePlaceholder}" Keyboard="Telephone" Text="{Binding PhoneNumber}">
                         <Entry.Behaviors>
                             <bhv:EntryValidationBehavior ValidationType="Phone" IsValid="{Binding PhoneNumberValidationResult}"/>
                         </Entry.Behaviors>
                     </Entry>
-                    <Image Grid.Row="2" Grid.Column="1" HeightRequest="30" WidthRequest="30" Source="{Binding PhoneNumberValidationResult, Converter={StaticResource validToImgCvt}}"/>
+                    <Image Grid.Row="2" Grid.Column="1" HeightRequest="30" WidthRequest="30" 
+                           IsVisible="{Binding PhoneNumberValidationResult, Converter={x:StaticResource validToBoolCvt}}"
+                           Source="{Binding PhoneNumberValidationResult, Converter={StaticResource validToImgCvt}}"/>
 
                     <Entry Grid.Row="3" Grid.Column="0" Placeholder="{x:Static res:Resources.SignUpEmailPlaceholder}" Keyboard="Email" Text="{Binding Email}">
                         <Entry.Behaviors>
                             <bhv:EntryValidationBehavior ValidationType="Email" IsValid="{Binding EmailValidationResult}"/>
                         </Entry.Behaviors>
                     </Entry>
-                    <Image Grid.Row="3" Grid.Column="1" HeightRequest="30" WidthRequest="30" Source="{Binding EmailValidationResult, Converter={StaticResource validToImgCvt}}"/>
+                    <Image Grid.Row="3" Grid.Column="1" HeightRequest="30" WidthRequest="30" 
+                           IsVisible="{Binding EmailValidationResult, Converter={x:StaticResource validToBoolCvt}}"
+                           Source="{Binding EmailValidationResult, Converter={StaticResource validToImgCvt}}"/>
 
                 </Grid>
 
             </Border>
 
+            <ContentView IsVisible="{Binding ErrorMessage, Converter={x:StaticResource emptyToBoolCvt}}">
+                <Border Stroke="{DynamicResource ErrorColor}" Background="{DynamicResource White}">
+                    <Border.Shadow>
+                        <Shadow Offset="5,10" Opacity=".5"/>
+                    </Border.Shadow>
+
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20" />
+                    </Border.StrokeShape>
+
+                    <VerticalStackLayout Margin="10" Padding="5">
+                        <Label Text="{Binding ErrorMessage}" FontAttributes="Bold"/>
+                        <Image HeightRequest="20" WidthRequest="20" Source="incorrect" />
+                    </VerticalStackLayout>
+                </Border>
+            </ContentView>
+            
+            
         </VerticalStackLayout>
     </ScrollView>
     
