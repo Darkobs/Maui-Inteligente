@@ -123,11 +123,35 @@
   <data name="AcceptButton" xml:space="preserve">
     <value>Accept</value>
   </data>
+  <data name="BranchDetailTitle" xml:space="preserve">
+    <value>Branch</value>
+  </data>
+  <data name="CurrentLocationLabel" xml:space="preserve">
+    <value>Me</value>
+  </data>
+  <data name="ErrorMessage" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="GetLocationErrorTitle" xml:space="preserve">
+    <value>Error getting location</value>
+  </data>
+  <data name="GetLocationNotEnabledError" xml:space="preserve">
+    <value>This device has no geolocation enabled</value>
+  </data>
+  <data name="GetLocationNotSupportedError" xml:space="preserve">
+    <value>This device does not support geolocation</value>
+  </data>
+  <data name="GetLocationPermissionError" xml:space="preserve">
+    <value>Permission for geolocation required</value>
+  </data>
   <data name="LanguagePageSubtitle" xml:space="preserve">
     <value>English</value>
   </data>
   <data name="LanguagePageTitle" xml:space="preserve">
     <value>Choose a Language</value>
+  </data>
+  <data name="LocationShowRoute" xml:space="preserve">
+    <value>Show route</value>
   </data>
   <data name="LoginAlertError" xml:space="preserve">
     <value>Error during login. Please check your credentials</value>

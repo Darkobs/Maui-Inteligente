@@ -10,9 +10,14 @@ public class MainMenuViewModel : BaseViewModel
 
         AboutCommand = new(async () => await NavigateToAsync(ABOUT_PAGE_ID));
 
+        LocationsCommand = new(async () => await NavigateToAsync(BRANCH_DETAIL_PAGE_ID));
+
     }
 
     public Command AboutCommand { get; set; }
+
+    public Command LocationsCommand { get; set; }
+
     private async Task NavigateToAsync(string route)
         => await Shell.Current.GoToAsync(route);
 }

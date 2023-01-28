@@ -123,11 +123,35 @@
   <data name="AcceptButton" xml:space="preserve">
     <value>Aceptar</value>
   </data>
+  <data name="BranchDetailTitle" xml:space="preserve">
+    <value>Sucursal</value>
+  </data>
+  <data name="CurrentLocationLabel" xml:space="preserve">
+    <value>Yo</value>
+  </data>
+  <data name="ErrorMessage" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="GetLocationErrorTitle" xml:space="preserve">
+    <value>Error al obtener la ubicación</value>
+  </data>
+  <data name="GetLocationNotEnabledError" xml:space="preserve">
+    <value>Este dispositivo no tiene la geolocalización habilitada</value>
+  </data>
+  <data name="GetLocationNotSupportedError" xml:space="preserve">
+    <value>Este dispositivo no soporta geolocalización</value>
+  </data>
+  <data name="GetLocationPermissionError" xml:space="preserve">
+    <value>Permiso de geolocalización requerido</value>
+  </data>
   <data name="LanguagePageSubtitle" xml:space="preserve">
     <value>Español</value>
   </data>
   <data name="LanguagePageTitle" xml:space="preserve">
     <value>Selecciona un idioma</value>
+  </data>
+  <data name="LocationShowRoute" xml:space="preserve">
+    <value>Mostrar ruta</value>
   </data>
   <data name="LoginAlertError" xml:space="preserve">
     <value>No se pudo iniciar sesión. Por favor revisa tus credenciales</value>

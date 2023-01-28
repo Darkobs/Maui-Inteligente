@@ -79,6 +79,69 @@ namespace MauiInteligente2022.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Branch.
+        /// </summary>
+        internal static string BranchDetailTitle {
+            get {
+                return ResourceManager.GetString("BranchDetailTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Me.
+        /// </summary>
+        internal static string CurrentLocationLabel {
+            get {
+                return ResourceManager.GetString("CurrentLocationLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        internal static string ErrorMessage {
+            get {
+                return ResourceManager.GetString("ErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error getting location.
+        /// </summary>
+        internal static string GetLocationErrorTitle {
+            get {
+                return ResourceManager.GetString("GetLocationErrorTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This device has no geolocation enabled.
+        /// </summary>
+        internal static string GetLocationNotEnabledError {
+            get {
+                return ResourceManager.GetString("GetLocationNotEnabledError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This device does not support geolocation.
+        /// </summary>
+        internal static string GetLocationNotSupportedError {
+            get {
+                return ResourceManager.GetString("GetLocationNotSupportedError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Permission for geolocation required.
+        /// </summary>
+        internal static string GetLocationPermissionError {
+            get {
+                return ResourceManager.GetString("GetLocationPermissionError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to English.
         /// </summary>
         internal static string LanguagePageSubtitle {
@@ -93,6 +156,15 @@ namespace MauiInteligente2022.Localization {
         internal static string LanguagePageTitle {
             get {
                 return ResourceManager.GetString("LanguagePageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show route.
+        /// </summary>
+        internal static string LocationShowRoute {
+            get {
+                return ResourceManager.GetString("LocationShowRoute", resourceCulture);
             }
         }
         
