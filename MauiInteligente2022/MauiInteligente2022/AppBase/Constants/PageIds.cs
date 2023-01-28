@@ -7,4 +7,6 @@ public static class PageIds
     public const string LANGUAGE_PAGE_ID = "02";
     public const string TERMS_PAGE_ID = "03";
     public const string SIGNUP_PAGE_ID = "04";
+    public const string MAIN_MENU_PAGE_ID = "05";
+    public const string ABOUT_PAGE_ID = "06";
 }

@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>Acerca de</value>
+  </data>
   <data name="AcceptButton" xml:space="preserve">
     <value>Aceptar</value>
   </data>
@@ -126,8 +129,14 @@
   <data name="LanguagePageTitle" xml:space="preserve">
     <value>Selecciona un idioma</value>
   </data>
+  <data name="LoginAlertError" xml:space="preserve">
+    <value>No se pudo iniciar sesión. Por favor revisa tus credenciales</value>
+  </data>
   <data name="LoginButton" xml:space="preserve">
     <value>Iniciar</value>
+  </data>
+  <data name="LoginPageSignUpButton" xml:space="preserve">
+    <value>Crea tu cuenta</value>
   </data>
   <data name="LoginPasswordError" xml:space="preserve">
     <value>Debes esribir una contraseña</value>
@@ -141,11 +150,35 @@
   <data name="LoginTitle" xml:space="preserve">
     <value>Iniciar Sesión</value>
   </data>
+  <data name="LoginUserAlertTitle" xml:space="preserve">
+    <value>Inicio de sesión</value>
+  </data>
   <data name="LoginUserError" xml:space="preserve">
     <value>Debes escribir un usuario</value>
   </data>
   <data name="LoginUserPlaceHolder" xml:space="preserve">
     <value>Usuario</value>
+  </data>
+  <data name="MainMenuAbout" xml:space="preserve">
+    <value>Acerca de</value>
+  </data>
+  <data name="MainMenuLocations" xml:space="preserve">
+    <value>Ubicaciones</value>
+  </data>
+  <data name="MainMenuNewReport" xml:space="preserve">
+    <value>Crear Reporte</value>
+  </data>
+  <data name="MainMenuReports" xml:space="preserve">
+    <value>Reportes</value>
+  </data>
+  <data name="MainMenuSubtitle" xml:space="preserve">
+    <value>Elige una opción</value>
+  </data>
+  <data name="MainMenuSync" xml:space="preserve">
+    <value>Sincronizar</value>
+  </data>
+  <data name="MainMenuTitle" xml:space="preserve">
+    <value>Menú Principal</value>
   </data>
   <data name="NextButton" xml:space="preserve">
     <value>Siguiente</value>

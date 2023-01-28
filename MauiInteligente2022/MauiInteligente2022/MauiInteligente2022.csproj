@@ -45,13 +45,23 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="appsettings.json" />
+	  <None Remove="Resources\Images\about.svg" />
 	  <None Remove="Resources\Images\correct.svg" />
 	  <None Remove="Resources\Images\incorrect.svg" />
+	  <None Remove="Resources\Images\locations.svg" />
 	  <None Remove="Resources\Images\login_user.svg" />
+	  <None Remove="Resources\Images\newreport.svg" />
+	  <None Remove="Resources\Images\reports.svg" />
 	  <None Remove="Resources\Images\splash.svg" />
+	  <None Remove="Resources\Images\sync.svg" />
 	  <None Remove="Resources\Raw\TermsAndConditionsEN.html" />
 	  <None Remove="Resources\Raw\TermsAndConditionsES.html" />
 	  <None Remove="Resources\Splash\splash_bot.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="appsettings.json" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -59,6 +69,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
@@ -88,13 +99,22 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="AppBase\Controls\MenuItem.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="AppBase\Controls\Resources\ControlsResources.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\About\AboutPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\LanguageSelectionPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MainMenuPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\SignUpPage.xaml">

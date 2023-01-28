@@ -31,7 +31,7 @@ public class SignUpViewModel : BaseViewModel
             NewUserDTO newUser = new(UserName, Password, Email, PhoneNumber, Address);
 
             HttpResponseMessage httpResponse =
-                await signupHttpClient.PostAsJsonAsync("/auth/register", newUser);
+                await signupHttpClient.PostAsJsonAsync("", newUser);
 
             if(httpResponse.IsSuccessStatusCode) 
             {

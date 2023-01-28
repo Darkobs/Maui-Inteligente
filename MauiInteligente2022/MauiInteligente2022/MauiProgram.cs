@@ -1,5 +1,8 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using MauiInteligente2022.Views.About;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using Microsoft.Maui.LifecycleEvents;
+using System.Reflection;
 
 namespace MauiInteligente2022;
 
@@ -22,6 +25,15 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
+
+		using var jsonConfig = Assembly.GetExecutingAssembly().GetManifestResourceStream("MauiInteligente2022.appsettings.json");
+
+		var config = new ConfigurationBuilder()
+			.AddJsonStream(jsonConfig)
+			.Build();
+
+		builder.Configuration.AddConfiguration(config);
+
 		builder.Services.AddTransient<LoginPage>()
 						.AddTransient<LoginViewModel>()
 						.AddTransient<SplashPage>()
@@ -31,13 +43,25 @@ public static class MauiProgram
 						.AddTransient<TermsAndConditionsPage>()
 						.AddTransient<TermsAndConditionsViewModel>()
 						.AddTransient<SignUpPage>()
-						.AddTransient<SignUpViewModel>();
+						.AddTransient<SignUpViewModel>()
+						.AddTransient<MainMenuPage>()
+                        .AddTransient<MainMenuViewModel>()
+						.AddTransient<AboutPage>()
+						.AddTransient<AboutViewModel>();
 
 		builder.Services.AddHttpClient<SignUpViewModel>(client =>
 		{
-			client.Timeout = TimeSpan.FromSeconds(40);
-			client.BaseAddress = new("https://apinetmauinteligente22.azurewebsites.net");
+            //client.Timeout = TimeSpan.FromSeconds(40);
+            //client.BaseAddress = new("https://apinetmauinteligente22.azurewebsites.net");
+            client.Timeout = TimeSpan.FromSeconds(int.Parse(builder.Configuration["Api:Timeout"]));
+			client.BaseAddress = new($"{builder.Configuration["Api:Uri"]}{builder.Configuration["Api:Signup"]}");
 		});
+
+        builder.Services.AddHttpClient<LoginViewModel>(client =>
+        {
+            client.Timeout = TimeSpan.FromSeconds(int.Parse(builder.Configuration["Api:Timeout"]));
+            client.BaseAddress = new($"{builder.Configuration["Api:Uri"]}{builder.Configuration["Api:Login"]}");
+        });
 
 #if DEBUG
         builder.Logging.AddDebug();

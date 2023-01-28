@@ -2,7 +2,7 @@
 
 public partial class App : Application
 {
-	public App(SignUpPage splashPage)
+	public App(SplashPage splashPage)
 	{
 		InitializeComponent();
 

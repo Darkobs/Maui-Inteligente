@@ -61,6 +61,15 @@ namespace MauiInteligente2022.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to About.
+        /// </summary>
+        internal static string AboutTitle {
+            get {
+                return ResourceManager.GetString("AboutTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Accept.
         /// </summary>
         internal static string AcceptButton {
@@ -88,11 +97,29 @@ namespace MauiInteligente2022.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Error during login. Please check your credentials.
+        /// </summary>
+        internal static string LoginAlertError {
+            get {
+                return ResourceManager.GetString("LoginAlertError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Login.
         /// </summary>
         internal static string LoginButton {
             get {
                 return ResourceManager.GetString("LoginButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create your account.
+        /// </summary>
+        internal static string LoginPageSignUpButton {
+            get {
+                return ResourceManager.GetString("LoginPageSignUpButton", resourceCulture);
             }
         }
         
@@ -133,6 +160,15 @@ namespace MauiInteligente2022.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Login.
+        /// </summary>
+        internal static string LoginUserAlertTitle {
+            get {
+                return ResourceManager.GetString("LoginUserAlertTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Must write a user name.
         /// </summary>
         internal static string LoginUserError {
@@ -147,6 +183,69 @@ namespace MauiInteligente2022.Localization {
         internal static string LoginUserPlaceHolder {
             get {
                 return ResourceManager.GetString("LoginUserPlaceHolder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to About.
+        /// </summary>
+        internal static string MainMenuAbout {
+            get {
+                return ResourceManager.GetString("MainMenuAbout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Locations.
+        /// </summary>
+        internal static string MainMenuLocations {
+            get {
+                return ResourceManager.GetString("MainMenuLocations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create Report.
+        /// </summary>
+        internal static string MainMenuNewReport {
+            get {
+                return ResourceManager.GetString("MainMenuNewReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reports.
+        /// </summary>
+        internal static string MainMenuReports {
+            get {
+                return ResourceManager.GetString("MainMenuReports", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose an option.
+        /// </summary>
+        internal static string MainMenuSubtitle {
+            get {
+                return ResourceManager.GetString("MainMenuSubtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sync.
+        /// </summary>
+        internal static string MainMenuSync {
+            get {
+                return ResourceManager.GetString("MainMenuSync", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Main Menu.
+        /// </summary>
+        internal static string MainMenuTitle {
+            get {
+                return ResourceManager.GetString("MainMenuTitle", resourceCulture);
             }
         }
         

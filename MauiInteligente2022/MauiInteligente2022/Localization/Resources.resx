@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>About</value>
+  </data>
   <data name="AcceptButton" xml:space="preserve">
     <value>Accept</value>
   </data>
@@ -126,8 +129,14 @@
   <data name="LanguagePageTitle" xml:space="preserve">
     <value>Choose a Language</value>
   </data>
+  <data name="LoginAlertError" xml:space="preserve">
+    <value>Error during login. Please check your credentials</value>
+  </data>
   <data name="LoginButton" xml:space="preserve">
     <value>Login</value>
+  </data>
+  <data name="LoginPageSignUpButton" xml:space="preserve">
+    <value>Create your account</value>
   </data>
   <data name="LoginPasswordError" xml:space="preserve">
     <value>Must write a password</value>
@@ -141,11 +150,35 @@
   <data name="LoginTitle" xml:space="preserve">
     <value>Login</value>
   </data>
+  <data name="LoginUserAlertTitle" xml:space="preserve">
+    <value>Login</value>
+  </data>
   <data name="LoginUserError" xml:space="preserve">
     <value>Must write a user name</value>
   </data>
   <data name="LoginUserPlaceHolder" xml:space="preserve">
     <value>User</value>
+  </data>
+  <data name="MainMenuAbout" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="MainMenuLocations" xml:space="preserve">
+    <value>Locations</value>
+  </data>
+  <data name="MainMenuNewReport" xml:space="preserve">
+    <value>Create Report</value>
+  </data>
+  <data name="MainMenuReports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="MainMenuSubtitle" xml:space="preserve">
+    <value>Choose an option</value>
+  </data>
+  <data name="MainMenuSync" xml:space="preserve">
+    <value>Sync</value>
+  </data>
+  <data name="MainMenuTitle" xml:space="preserve">
+    <value>Main Menu</value>
   </data>
   <data name="NextButton" xml:space="preserve">
     <value>Next</value>
