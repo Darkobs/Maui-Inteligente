@@ -1,5 +1,6 @@
 ﻿using MauiInteligente2022.AppBase.Services.GoogleApis;
 using System.Linq.Expressions;
+using System.Web;
 
 namespace MauiInteligente2022.ViewModels;
 
@@ -105,7 +106,7 @@ public class BranchDetailViewModel : BaseViewModel
                 else
                     origin = $"{currentLocation.Latitude}, {currentLocation.Longitude}";
 
-                var directions = await directionsApiClient.GetGoogleDirectionsAsync(origin, Location);
+                var directions = await directionsApiClient.GetGoogleDirectionsAsync(HttpUtility.UrlEncode(origin), HttpUtility.UrlEncode(Location));
 
                 var steps = directions?.routes.FirstOrDefault()?.legs?.FirstOrDefault()?.steps;
 

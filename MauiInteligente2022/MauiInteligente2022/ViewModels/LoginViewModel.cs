@@ -70,7 +70,12 @@ public class LoginViewModel : BaseViewModel
             var loginResponse = await httpClient.PostAsJsonAsync("", loginCredentials);
 
             if (loginResponse.IsSuccessStatusCode)
+            {
+                var userToken = await loginResponse.Content.ReadFromJsonAsync<string>();
+                AppConfiguration.UserToken = userToken;
                 Application.Current.MainPage = new AppShell();
+            }
+                
             else
                 await Application.Current.MainPage.DisplayAlert(Resources.LoginUserAlertTitle,
                     Resources.LoginAlertError,

@@ -14,6 +14,7 @@
         <controls:MenuItem Grid.Column="0" Grid.Row="1" Source="sync" Text="{x:Static res:Resources.MainMenuSync}"/>
         <controls:MenuItem Grid.Column="1" Grid.Row="1" Source="locations" Text="{x:Static res:Resources.MainMenuLocations}" MenuCommand="{Binding LocationsCommand}"/>
         <controls:MenuItem Grid.Column="0" Grid.Row="2" Source="about" Text="{x:Static res:Resources.MainMenuAbout}" MenuCommand="{Binding AboutCommand}"/>
+        <controls:MenuItem Grid.Column="1" Grid.Row="2" Source="logout" Text="{x:Static res:Resources.MainMenuLogout}" MenuCommand="{Binding LogoutCommand}"/>
 
     </Grid>
 

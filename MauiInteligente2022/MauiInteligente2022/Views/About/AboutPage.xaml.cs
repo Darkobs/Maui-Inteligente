@@ -1,4 +1,4 @@
-namespace MauiInteligente2022.Views.About;
+namespace MauiInteligente2022.Views;
 
 public partial class AboutPage : BindedPage
 {

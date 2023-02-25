@@ -117,6 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AboutAppVersion" xml:space="preserve">
+    <value>App Version</value>
+  </data>
+  <data name="AboutDeviceModel" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="AboutDeviceName" xml:space="preserve">
+    <value>Device Name</value>
+  </data>
+  <data name="AboutDevicePlatform" xml:space="preserve">
+    <value>Device Platform</value>
+  </data>
+  <data name="AboutDeviceSystemVersion" xml:space="preserve">
+    <value>System Versión</value>
+  </data>
+  <data name="AboutManufacturer" xml:space="preserve">
+    <value>Manufacturer</value>
+  </data>
   <data name="AboutTitle" xml:space="preserve">
     <value>About</value>
   </data>
@@ -189,6 +207,9 @@
   <data name="MainMenuLocations" xml:space="preserve">
     <value>Locations</value>
   </data>
+  <data name="MainMenuLogout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
   <data name="MainMenuNewReport" xml:space="preserve">
     <value>Create Report</value>
   </data>
@@ -206,6 +227,9 @@
   </data>
   <data name="NextButton" xml:space="preserve">
     <value>Next</value>
+  </data>
+  <data name="PinLabelDestination" xml:space="preserve">
+    <value>Destination</value>
   </data>
   <data name="SignUpAddressPlaceholder" xml:space="preserve">
     <value>Address</value>

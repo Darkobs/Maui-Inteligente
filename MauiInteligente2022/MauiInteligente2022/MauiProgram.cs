@@ -1,5 +1,4 @@
 ﻿using MauiInteligente2022.AppBase.Services.GoogleApis;
-using MauiInteligente2022.Views.About;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.Maui.LifecycleEvents;

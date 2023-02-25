@@ -3,7 +3,7 @@ using MauiMap = Microsoft.Maui.Controls.Maps;
 
 namespace MauiInteligente2022.AppBase.Controls;
 
-public class RouteMap : MauiMap.Map
+public partial class RouteMap : MauiMap.Map
 {
     public static readonly BindableProperty UserLocationProperty = BindableProperty.Create(nameof(UserLocation), typeof(Location), typeof(RouteMap),
             null, propertyChanged: OnUserLocationChanged);
@@ -42,7 +42,7 @@ public class RouteMap : MauiMap.Map
                 StrokeColor = Colors.Red
             };
 
-            if (bindable is MauiMap.Map routeMap)
+            if (bindable is RouteMap routeMap)
             {
                 routeMap.Pins.Clear();
                 routeMap.MapElements.Clear();
@@ -53,6 +53,15 @@ public class RouteMap : MauiMap.Map
                 }
 
                 routeMap.MapElements.Add(polyline);
+
+                routeMap.ColorPins = new List<ColorPin>
+                {
+                    new() { Color = Colors.Green, Label = Localization.Resources.CurrentLocationLabel, Location = route.First() },
+                    new() { Color = Colors.Blue, Label = Localization.Resources.PinLabelDestination, Location= route.Last() }
+                };
+
+                routeMap.AddColorPins();
+
                 routeMap.MoveToRegion(MapSpan.FromCenterAndRadius(route.First(), Distance.FromKilometers(3)));
             }
         }
