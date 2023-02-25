@@ -1,0 +1,12 @@
+C:\Users\chacc\Desktop\SVNGitHub\Maui-Inteligente\BaseRestClientCore\bin\Debug\net7.0\BaseRestClientCore.deps.json
+C:\Users\chacc\Desktop\SVNGitHub\Maui-Inteligente\BaseRestClientCore\bin\Debug\net7.0\BaseRestClientCore.dll
+C:\Users\chacc\Desktop\SVNGitHub\Maui-Inteligente\BaseRestClientCore\bin\Debug\net7.0\BaseRestClientCore.pdb
+C:\Users\chacc\Desktop\SVNGitHub\Maui-Inteligente\BaseRestClientCore\obj\Debug\net7.0\BaseRestClientCore.csproj.AssemblyReference.cache
+C:\Users\chacc\Desktop\SVNGitHub\Maui-Inteligente\BaseRestClientCore\obj\Debug\net7.0\BaseRestClientCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chacc\Desktop\SVNGitHub\Maui-Inteligente\BaseRestClientCore\obj\Debug\net7.0\BaseRestClientCore.AssemblyInfoInputs.cache
+C:\Users\chacc\Desktop\SVNGitHub\Maui-Inteligente\BaseRestClientCore\obj\Debug\net7.0\BaseRestClientCore.AssemblyInfo.cs
+C:\Users\chacc\Desktop\SVNGitHub\Maui-Inteligente\BaseRestClientCore\obj\Debug\net7.0\BaseRestClientCore.csproj.CoreCompileInputs.cache
+C:\Users\chacc\Desktop\SVNGitHub\Maui-Inteligente\BaseRestClientCore\obj\Debug\net7.0\BaseRestClientCore.dll
+C:\Users\chacc\Desktop\SVNGitHub\Maui-Inteligente\BaseRestClientCore\obj\Debug\net7.0\refint\BaseRestClientCore.dll
+C:\Users\chacc\Desktop\SVNGitHub\Maui-Inteligente\BaseRestClientCore\obj\Debug\net7.0\BaseRestClientCore.pdb
+C:\Users\chacc\Desktop\SVNGitHub\Maui-Inteligente\BaseRestClientCore\obj\Debug\net7.0\ref\BaseRestClientCore.dll

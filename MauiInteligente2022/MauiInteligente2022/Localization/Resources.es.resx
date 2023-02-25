@@ -171,6 +171,9 @@
   <data name="LocationShowRoute" xml:space="preserve">
     <value>Mostrar ruta</value>
   </data>
+  <data name="LocationsTitle" xml:space="preserve">
+    <value>Sucursales</value>
+  </data>
   <data name="LoginAlertError" xml:space="preserve">
     <value>No se pudo iniciar sesión. Por favor revisa tus credenciales</value>
   </data>

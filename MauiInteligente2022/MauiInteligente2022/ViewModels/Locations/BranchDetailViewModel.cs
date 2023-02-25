@@ -1,12 +1,10 @@
 ﻿using MauiInteligente2022.AppBase.Services.GoogleApis;
-using System.Linq.Expressions;
 using System.Web;
 
 namespace MauiInteligente2022.ViewModels;
 
-public class BranchDetailViewModel : BaseViewModel
+public class BranchDetailViewModel : BaseViewModel, IQueryAttributable
 {
-
     private GoogleDirectionsApiClient directionsApiClient;
 
     public BranchDetailViewModel(GoogleDirectionsApiClient googleDirectionsApiClient)
@@ -14,8 +12,15 @@ public class BranchDetailViewModel : BaseViewModel
         Title = Resources.BranchDetailTitle;
         PageId = BRANCH_DETAIL_PAGE_ID;
         directionsApiClient = googleDirectionsApiClient;
-        Location = "Lote 3 2, El Obelisco, 55700 San Francisco Coacalco, Méx.";
+        //Location = "Lote 3 2, El Obelisco, 55700 San Francisco Coacalco, Méx.";
         ShowRouteCommand = new(async () => await ShowRouteAsync());
+    }
+
+    public void ApplyQueryAttributes(IDictionary<string, object> query)
+    {
+        Branch branch = query["branch"] as Branch;
+        SubTitle = branch.Name;
+        Location = branch.Location;
     }
 
     #region Properties
@@ -131,6 +136,5 @@ public class BranchDetailViewModel : BaseViewModel
             }
             IsBusy = false;
         }
-        
     }
 }

@@ -10,7 +10,7 @@ public class MainMenuViewModel : BaseViewModel
 
         AboutCommand = new(async () => await NavigateToAsync(ABOUT_PAGE_ID));
 
-        LocationsCommand = new(async () => await NavigateToAsync(BRANCH_DETAIL_PAGE_ID));
+        LocationsCommand = new(async () => await NavigateToAsync(BRANCHES_PAGE_ID));
 
         LogoutCommand = new(() =>
         {

@@ -23,7 +23,8 @@ public class SplashViewModel : BaseViewModel
 
             if(securityToken.ValidTo > DateTime.UtcNow && securityToken.ValidFrom < DateTime.UtcNow) 
             {
-                next = _sp.GetRequiredService<MainMenuPage>(); 
+                //next = _sp.GetRequiredService<MainMenuPage>(); 
+                Application.Current.MainPage = new AppShell();
             }
             else
             {
@@ -52,6 +53,9 @@ public class SplashViewModel : BaseViewModel
                 : _sp.GetRequiredService<LanguageSelectionPage>();
         } 
 
-        Application.Current.MainPage = new NavigationPage(next);
+        if(next is not null)
+        {
+            Application.Current.MainPage = new NavigationPage(next);
+        }
     }
 }

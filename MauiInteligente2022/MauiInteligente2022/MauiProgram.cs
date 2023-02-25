@@ -1,4 +1,5 @@
 ﻿using MauiInteligente2022.AppBase.Services.GoogleApis;
+using MauiInteligente2022.RestServices;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.Maui.LifecycleEvents;
@@ -51,7 +52,9 @@ public static class MauiProgram
 						.AddTransient<AboutViewModel>()
 						.AddTransient<BranchDetailPage>()
 						.AddTransient<BranchDetailViewModel>()
-						.AddTransient<GoogleDirectionsApiClient>();
+						.AddTransient<GoogleDirectionsApiClient>()
+						.AddTransient<LocationsPage>()
+						.AddTransient<LocationsViewModel>();
 
 		builder.Services.AddHttpClient<SignUpViewModel>(client =>
 		{
@@ -60,6 +63,12 @@ public static class MauiProgram
             client.Timeout = TimeSpan.FromSeconds(int.Parse(builder.Configuration["Api:Timeout"]));
 			client.BaseAddress = new($"{builder.Configuration["Api:Uri"]}{builder.Configuration["Api:Signup"]}");
 		});
+
+		builder.Services.AddHttpClient<BranchRestServices>(client =>
+		{
+            client.Timeout = TimeSpan.FromSeconds(int.Parse(builder.Configuration["Api:Timeout"]));
+            client.BaseAddress = new($"{builder.Configuration["Api:Uri"]}{builder.Configuration["Api:Branches"]}");
+        });
 
         builder.Services.AddHttpClient<LoginViewModel>(client =>
         {

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<controls:BindedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="MauiInteligente2022.Views.LocationsPage"
+            xmlns:controls="clr-namespace:MauiInteligente2022.AppBase.Controls"
+            xmlns:res="clr-namespace:MauiInteligente2022.Localization"
+            xmlns:vm="clr-namespace:MauiInteligente2022.ViewModels"
+            xmlns:models="clr-namespace:MauiInteligente2022.Models"
+            x:DataType="vm:LocationsViewModel"
+            >
+
+    <RefreshView IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshCommand}">
+        <CollectionView 
+        SelectionMode="Single"
+        ItemsSource="{Binding Branches}"
+        SelectedItem="{Binding SelectedBranch}"
+        RemainingItemsThreshold="3"
+        RemainingItemsThresholdReachedCommand="{Binding LoadNextItemsCommand}"
+        >
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="10" 
+                      RowDefinitions="15,50"
+                      ColumnDefinitions="20*,80*"
+                      x:DataType="models:Branch"
+                      >
+                        <Border
+                        Grid.RowSpan="2"
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        BackgroundColor="{x:DynamicResource Primary}"
+                        HeightRequest="50"
+                        WidthRequest="50"
+                        Padding="5">
+
+                            <Label 
+                            Text="{Binding BranchId}"
+                            FontSize="Medium"
+                            TextColor="White"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"/>
+
+                        </Border>
+
+                        <Label Grid.Column="1" Grid.Row="0"
+                           TextColor="{x:DynamicResource Primary}"
+                           FontSize="Medium"
+                           Text="{Binding Name}"/>
+                        <Label Grid.Column="1" Grid.Row="1"
+                           LineBreakMode="WordWrap"
+                           Text="{Binding Location}"/>
+
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+    </RefreshView>
+    
+</controls:BindedPage>

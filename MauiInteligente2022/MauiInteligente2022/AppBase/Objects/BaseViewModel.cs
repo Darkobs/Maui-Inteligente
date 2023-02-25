@@ -1,4 +1,7 @@
-﻿namespace MauiInteligente2022.AppBase.Objects;
+﻿using MauiInteligente2022.AppBase.Services.GoogleApis;
+using MauiInteligente2022.ViewModels;
+using System.Web;
+namespace MauiInteligente2022.AppBase.Objects;
 
 public abstract class BaseViewModel : ObservableObject
 {
