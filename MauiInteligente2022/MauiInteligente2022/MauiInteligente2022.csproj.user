@@ -32,6 +32,12 @@
     <MauiXaml Update="Views\MainMenuPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\NewReport\NewReportStep1Page.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\NewReport\PreviewPhotoPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\SignUpPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

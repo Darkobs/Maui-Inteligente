@@ -11,4 +11,8 @@ public static class PageIds
     public const string ABOUT_PAGE_ID = "06";
     public const string BRANCHES_PAGE_ID = "07";
     public const string BRANCH_DETAIL_PAGE_ID = "08";
+    public const string NEW_REPORT_STEP_1 = "09";
+    public const string PREVIEW_PHOTO = "10";
+    public const string NEW_REPORT_STEP_2 = "11";
+    public const string NEW_REPORT_STEP_3 = "12";
 }

@@ -6,4 +6,6 @@ global using MauiInteligente2022.AppBase.Controls;
 global using MauiInteligente2022.Localization;
 global using MauiInteligente2022.Configuration;
 global using MauiInteligente2022.RestServices;
+global using MauiInteligente2022.AppBase.Helpers;
 global using static MauiInteligente2022.AppBase.Constants.PageIds;
+global using static MauiInteligente2022.AppBase.Constants.NavigationParameters;

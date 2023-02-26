@@ -228,11 +228,26 @@
   <data name="MainMenuTitle" xml:space="preserve">
     <value>Menú Principal</value>
   </data>
+  <data name="NewReportStep1Subtitle" xml:space="preserve">
+    <value>Evidencias</value>
+  </data>
+  <data name="NewReportTitle" xml:space="preserve">
+    <value>Nuevo Reporte</value>
+  </data>
   <data name="NextButton" xml:space="preserve">
     <value>Siguiente</value>
   </data>
   <data name="PinLabelDestination" xml:space="preserve">
     <value>Destino</value>
+  </data>
+  <data name="PreviewPhotoSubtitle" xml:space="preserve">
+    <value>Vista Previa</value>
+  </data>
+  <data name="ProgressBarHeader" xml:space="preserve">
+    <value>Progreso</value>
+  </data>
+  <data name="RetakePhotoButton" xml:space="preserve">
+    <value>Volver a tomar</value>
   </data>
   <data name="SignUpAddressPlaceholder" xml:space="preserve">
     <value>Dirección</value>

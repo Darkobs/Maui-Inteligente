@@ -394,6 +394,24 @@ namespace MauiInteligente2022.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Evidences.
+        /// </summary>
+        internal static string NewReportStep1Subtitle {
+            get {
+                return ResourceManager.GetString("NewReportStep1Subtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New Report.
+        /// </summary>
+        internal static string NewReportTitle {
+            get {
+                return ResourceManager.GetString("NewReportTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Next.
         /// </summary>
         internal static string NextButton {
@@ -408,6 +426,33 @@ namespace MauiInteligente2022.Localization {
         internal static string PinLabelDestination {
             get {
                 return ResourceManager.GetString("PinLabelDestination", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Preview.
+        /// </summary>
+        internal static string PreviewPhotoSubtitle {
+            get {
+                return ResourceManager.GetString("PreviewPhotoSubtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Progress.
+        /// </summary>
+        internal static string ProgressBarHeader {
+            get {
+                return ResourceManager.GetString("ProgressBarHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Retake photo.
+        /// </summary>
+        internal static string RetakePhotoButton {
+            get {
+                return ResourceManager.GetString("RetakePhotoButton", resourceCulture);
             }
         }
         

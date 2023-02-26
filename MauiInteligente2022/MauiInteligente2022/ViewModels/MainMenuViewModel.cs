@@ -18,6 +18,7 @@ public class MainMenuViewModel : BaseViewModel
             App.Current.MainPage = new NavigationPage(sp.GetRequiredService<LoginPage>());
         });
 
+        NewReportCommand = new(async () => await NavigateToAsync(NEW_REPORT_STEP_1));
     }
 
     public Command AboutCommand { get; set; }
@@ -25,6 +26,8 @@ public class MainMenuViewModel : BaseViewModel
     public Command LocationsCommand { get; set; }
 
     public Command LogoutCommand { get; set; }
+
+    public Command NewReportCommand { get; set; }
 
     private async Task NavigateToAsync(string route)
         => await Shell.Current.GoToAsync(route);

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<controls:BindedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiInteligente2022.Views.NewReportStep1Page"
+             xmlns:controls="clr-namespace:MauiInteligente2022.AppBase.Controls"
+             xmlns:res="clr-namespace:MauiInteligente2022.Localization"
+             xmlns:vm="clr-namespace:MauiInteligente2022.ViewModels"
+             xmlns:cvt="clr-namespace:MauiInteligente2022.AppBase.Converters"
+             x:DataType="vm:NewReportStep1ViewModel"
+             >
+
+    <controls:BindedPage.Resources>
+        <x:String x:Key="nullImageFile">take</x:String>
+        <cvt:ByteArraytoImageConverter x:Key="bytesToImageCvt"/>
+    </controls:BindedPage.Resources>
+    
+    <Grid Margin="20" RowDefinitions="auto,*,*" ColumnDefinitions="*,*">
+        <controls:ProgressBar Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" CurrentStep="1" TotalSteps="4" />
+
+        <ImageButton Grid.Row="1" Grid.Column="0" Command="{Binding TakePhotoCommand}" CommandParameter="1" 
+                     Source="{Binding Photo1, TargetNullValue={StaticResource nullImageFile}, Converter={StaticResource bytesToImageCvt}}" />
+
+        <ImageButton Grid.Row="1" Grid.Column="1" Command="{Binding TakePhotoCommand}" CommandParameter="2" 
+                     Source="{Binding Photo2, TargetNullValue={StaticResource nullImageFile}, Converter={StaticResource bytesToImageCvt}}" />
+
+        <ImageButton Grid.Row="2" Grid.Column="0" Command="{Binding TakePhotoCommand}" CommandParameter="3" 
+                     Source="{Binding Photo3, TargetNullValue={StaticResource nullImageFile}, Converter={StaticResource bytesToImageCvt}}" />
+
+        <ImageButton Grid.Row="2" Grid.Column="1" Command="{Binding TakePhotoCommand}" CommandParameter="4" 
+                     Source="{Binding Photo4, TargetNullValue={StaticResource nullImageFile}, Converter={StaticResource bytesToImageCvt}}" />
+
+    </Grid>
+</controls:BindedPage>

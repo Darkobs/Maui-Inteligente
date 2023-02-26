@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<controls:BindedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiInteligente2022.Views.PreviewPhotoPage"
+             xmlns:controls="clr-namespace:MauiInteligente2022.AppBase.Controls"
+             xmlns:res="clr-namespace:MauiInteligente2022.Localization"
+             xmlns:vm="clr-namespace:MauiInteligente2022.ViewModels"
+             xmlns:cvt="clr-namespace:MauiInteligente2022.AppBase.Converters"
+             x:DataType="vm:PreviewPhotoViewModel"
+             >
+
+    <controls:BindedPage.Resources>
+        <cvt:ByteArraytoImageConverter x:Key="bytesToImagecvt" />
+    </controls:BindedPage.Resources>
+    
+    <Grid RowDefinitions="20,*,auto,auto" Padding="5">
+        <controls:ZoomContainer Grid.Row="1">
+            <Image Source="{Binding Photo, Converter={StaticResource bytesToImagecvt}}"/>
+        </controls:ZoomContainer>
+
+        <Button Grid.Row="2" Command="{Binding AcceptCommand}" Text="{x:Static res:Resources.AcceptButton}"/>
+        <Button Grid.Row="3" Command="{Binding TakePhotoCommand}" Text="{x:Static res:Resources.RetakePhotoButton}"/>
+        
+    </Grid>
+    
+</controls:BindedPage>

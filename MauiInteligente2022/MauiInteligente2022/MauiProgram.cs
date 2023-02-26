@@ -54,7 +54,13 @@ public static class MauiProgram
 						.AddTransient<BranchDetailViewModel>()
 						.AddTransient<GoogleDirectionsApiClient>()
 						.AddTransient<LocationsPage>()
-						.AddTransient<LocationsViewModel>();
+						.AddTransient<LocationsViewModel>()
+						.AddTransient<NewReportStep1Page>()
+						.AddTransient<NewReportStep1ViewModel>()
+						.AddTransient<PreviewPhotoPage>()
+						.AddTransient<PreviewPhotoViewModel>();
+
+		builder.Services.AddSingleton<MediaHelper>();
 
 		builder.Services.AddHttpClient<SignUpViewModel>(client =>
 		{

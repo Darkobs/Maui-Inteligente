@@ -16,7 +16,7 @@ public class BranchDetailViewModel : BaseViewModel, IQueryAttributable
         ShowRouteCommand = new(async () => await ShowRouteAsync());
     }
 
-    public void ApplyQueryAttributes(IDictionary<string, object> query)
+    public override void ApplyQueryAttributes(IDictionary<string, object> query)
     {
         Branch branch = query["branch"] as Branch;
         SubTitle = branch.Name;

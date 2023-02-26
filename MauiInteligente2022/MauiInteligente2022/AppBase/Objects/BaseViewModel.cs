@@ -3,7 +3,7 @@ using MauiInteligente2022.ViewModels;
 using System.Web;
 namespace MauiInteligente2022.AppBase.Objects;
 
-public abstract class BaseViewModel : ObservableObject
+public abstract class BaseViewModel : ObservableObject, IQueryAttributable
 {
     private string _title;
 
@@ -36,7 +36,16 @@ public abstract class BaseViewModel : ObservableObject
         set => SetProperty(ref _isBusy, value);
     }
 
+    public virtual Task OnBackButtonPressed() => Task.CompletedTask;
+
+    public virtual Task Save() => Task.CompletedTask;
+
     public virtual Task OnAppearing() => Task.CompletedTask;
 
     public virtual Task OnDisappearing() => Task.CompletedTask;
+
+    public virtual void ApplyQueryAttributes(IDictionary<string, object> query)
+    {
+        
+    }
 }

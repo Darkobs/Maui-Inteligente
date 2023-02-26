@@ -53,9 +53,13 @@
 	  <None Remove="Resources\Images\login_user.svg" />
 	  <None Remove="Resources\Images\logout.svg" />
 	  <None Remove="Resources\Images\newreport.svg" />
+	  <None Remove="Resources\Images\progresscompleted.png" />
+	  <None Remove="Resources\Images\progresscurrent.svg" />
+	  <None Remove="Resources\Images\progresspending.png" />
 	  <None Remove="Resources\Images\reports.svg" />
 	  <None Remove="Resources\Images\splash.svg" />
 	  <None Remove="Resources\Images\sync.svg" />
+	  <None Remove="Resources\Images\take.svg" />
 	  <None Remove="Resources\Raw\TermsAndConditionsEN.html" />
 	  <None Remove="Resources\Raw\TermsAndConditionsES.html" />
 	  <None Remove="Resources\Splash\splash_bot.svg" />
@@ -129,6 +133,12 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\MainMenuPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\NewReport\NewReportStep1Page.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\NewReport\PreviewPhotoPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\SignUpPage.xaml">
