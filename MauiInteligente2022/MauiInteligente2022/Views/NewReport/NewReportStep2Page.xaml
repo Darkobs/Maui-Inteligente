@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<controls:BindedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiInteligente2022.Views.NewReportStep2Page"
+             xmlns:controls="clr-namespace:MauiInteligente2022.AppBase.Controls"
+             xmlns:res="clr-namespace:MauiInteligente2022.Localization"
+             xmlns:vm="clr-namespace:MauiInteligente2022.ViewModels"
+             x:DataType="vm:NewReportStep2ViewModel"
+             >
+
+    <controls:BindedPage.ToolbarItems>
+        <ToolbarItem Text="{x:Static res:Resources.NextButton}" Command="{Binding NextCommand}"/>
+    </controls:BindedPage.ToolbarItems>
+    
+    <ScrollView>
+        <VerticalStackLayout Margin="20" Spacing="15">
+            <controls:ProgressBar CurrentStep="2" TotalSteps="4" />
+
+            <controls:ErrorValidationEntry IsObligatory="True" Keyboard="Numeric" 
+                                           Text="{Binding ClientNumber}" 
+                                           IsValid="{Binding ClientDocumentNumberValidator.IsValid}"
+                                           ErrorDescription="{Binding ClientNumberValidator.ErrorMessage}" />
+            
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</controls:BindedPage>

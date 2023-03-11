@@ -57,10 +57,13 @@ public static class MauiProgram
 						.AddTransient<LocationsViewModel>()
 						.AddTransient<NewReportStep1Page>()
 						.AddTransient<NewReportStep1ViewModel>()
-						.AddTransient<PreviewPhotoPage>()
+                        .AddTransient<NewReportStep2Page>()
+                        .AddTransient<NewReportStep2ViewModel>()
+                        .AddTransient<PreviewPhotoPage>()
 						.AddTransient<PreviewPhotoViewModel>();
 
-		builder.Services.AddSingleton<MediaHelper>();
+		builder.Services.AddSingleton<MediaHelper>()
+						.AddSingleton<LocalFilesHelper>();
 
 		builder.Services.AddHttpClient<SignUpViewModel>(client =>
 		{

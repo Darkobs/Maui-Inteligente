@@ -86,4 +86,12 @@ public abstract class BindedPage : ContentPage
 		if(BindingContext is BaseViewModel baseViewModel)
             baseViewModel.OnDisappearing();
     }
+
+	public async Task UnfocusSaveAsync()
+	{
+		if(BindingContext is BaseViewModel baseViewModel)
+		{
+			await baseViewModel.SaveAsync();
+		}
+	}
 }

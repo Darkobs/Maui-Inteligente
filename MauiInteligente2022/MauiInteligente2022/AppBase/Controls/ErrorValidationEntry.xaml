@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<VerticalStackLayout xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:bhv="clr-namespace:MauiInteligente2022.AppBase.Behaviors"
+             x:Class="MauiInteligente2022.AppBase.Controls.ErrorValidationEntry">
+
+    <HorizontalStackLayout>
+        <Label x:Name="lbTitle" />
+        <Label x:Name="lbIndicator" TextColor="Red" Text="*"/>
+    </HorizontalStackLayout>
+
+    <Entry x:Name="entry" Text="{Binding Text}">
+        <Entry.Behaviors>
+            <bhv:ViewUnfocusBehavior />
+        </Entry.Behaviors>
+    </Entry>
+    <Label x:Name="lbError" TextColor="Red" Text="{Binding ErrorDescription}"/>
+
+</VerticalStackLayout>

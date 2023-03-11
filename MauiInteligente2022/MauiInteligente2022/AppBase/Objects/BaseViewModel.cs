@@ -38,7 +38,7 @@ public abstract class BaseViewModel : ObservableObject, IQueryAttributable
 
     public virtual Task OnBackButtonPressed() => Task.CompletedTask;
 
-    public virtual Task Save() => Task.CompletedTask;
+    public virtual Task SaveAsync() => Task.CompletedTask;
 
     public virtual Task OnAppearing() => Task.CompletedTask;
 

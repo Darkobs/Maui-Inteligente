@@ -231,6 +231,9 @@
   <data name="NewReportStep1Subtitle" xml:space="preserve">
     <value>Evidencias</value>
   </data>
+  <data name="NewReportStep2Subtitle" xml:space="preserve">
+    <value>Información del cliente</value>
+  </data>
   <data name="NewReportTitle" xml:space="preserve">
     <value>Nuevo Reporte</value>
   </data>
@@ -317,4 +320,5 @@
   <data name="TermsPageTitle" xml:space="preserve">
     <value>Términos y condiciones</value>
   </data>
+  <data name="ValidationsGreater" xml:space="preserve">    <value>EL valor tiene que ser mayor a {0}</value>    <comment/>  </data>  <data name="ValidationsEmail" xml:space="preserve">    <value>El valor debe ser un correo electrónico</value>    <comment/>  </data>  <data name="ValidationsExactLength" xml:space="preserve">    <value>El valor debe tener una longitud de {0} caracteres</value>    <comment/>  </data>  <data name="ValidationsMaxLength" xml:space="preserve">    <value>Este valor debe tener menos de {0} caracteres</value>    <comment/>  </data>  <data name="ValidationsNull" xml:space="preserve">    <value>Este campo debe tener un valor</value>    <comment/>  </data>  <data name="ValidationsPhone" xml:space="preserve">    <value>Este valor debe ser un número telefónico</value>    <comment/>  </data>  <data name="ReportClientNumber" xml:space="preserve">    <value>Número de cliente</value>    <comment/>  </data>  <data name="ReportClientName" xml:space="preserve">    <value>Nombre del cliente</value>    <comment/>  </data>  <data name="ReportClientEmail" xml:space="preserve">    <value>Correo electrónico del cliente</value>    <comment/>  </data>  <data name="ReportClientPhone" xml:space="preserve">    <value>Telefóno del cliente</value>    <comment/>  </data>  <data name="ReportClientCountry" xml:space="preserve">    <value>País del cliente</value>    <comment/>  </data>  <data name="ReportClientCity" xml:space="preserve">    <value>Ciudad del cliente</value>    <comment/>  </data>  <data name="ReportClientDocument" xml:space="preserve">    <value>Documento de identidad</value>    <comment/>  </data>  <data name="ReportClientDocumentNumber" xml:space="preserve">    <value>Número del documento de identidad</value>    <comment/>  </data>  <data name="ReportDetail" xml:space="preserve">    <value>Detalles del reporte</value>    <comment/>  </data>  <data name="ReportAmount" xml:space="preserve">    <value>Monto total</value>    <comment/>  </data>  <data name="ReportPhotosHeader" xml:space="preserve">    <value>Fotos</value>    <comment/>  </data>  <data name="ReportClientDetailsHeader" xml:space="preserve">    <value>Información del cliente</value>    <comment/>  </data>  <data name="ReportDetailsHeader" xml:space="preserve">    <value>Detalles del reporte</value>    <comment/>  </data>
 </root>

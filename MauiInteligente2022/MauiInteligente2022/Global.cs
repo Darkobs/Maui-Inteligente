@@ -7,5 +7,6 @@ global using MauiInteligente2022.Localization;
 global using MauiInteligente2022.Configuration;
 global using MauiInteligente2022.RestServices;
 global using MauiInteligente2022.AppBase.Helpers;
+global using System.Text.Json;
 global using static MauiInteligente2022.AppBase.Constants.PageIds;
 global using static MauiInteligente2022.AppBase.Constants.NavigationParameters;

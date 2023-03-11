@@ -8,6 +8,12 @@
     <DefaultDevice>pixel_5_-_api_31</DefaultDevice>
   </PropertyGroup>
   <ItemGroup>
+    <MauiXaml Update="AppBase\Controls\ErrorValidationEntry.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="AppBase\Controls\ErrorValidationPicker.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="AppBase\Controls\MenuItem.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
@@ -33,6 +39,9 @@
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\NewReport\NewReportStep1Page.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\NewReport\NewReportStep2Page.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\NewReport\PreviewPhotoPage.xaml">

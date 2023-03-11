@@ -10,3 +10,9 @@ public record Branch(int BranchId, string Name, string Location)
 
     }
 }
+
+#region NewReport
+
+public record NewRecordStep1(string ReportId, string PhotoPath1, string PhotoPath2, string PhotoPath3, string PhotoPath4);
+
+#endregion

@@ -403,6 +403,15 @@ namespace MauiInteligente2022.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Client Information.
+        /// </summary>
+        internal static string NewReportStep2Subtitle {
+            get {
+                return ResourceManager.GetString("NewReportStep2Subtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to New Report.
         /// </summary>
         internal static string NewReportTitle {
@@ -444,6 +453,123 @@ namespace MauiInteligente2022.Localization {
         internal static string ProgressBarHeader {
             get {
                 return ResourceManager.GetString("ProgressBarHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total amount.
+        /// </summary>
+        internal static string ReportAmount {
+            get {
+                return ResourceManager.GetString("ReportAmount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Client city.
+        /// </summary>
+        internal static string ReportClientCity {
+            get {
+                return ResourceManager.GetString("ReportClientCity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Client country.
+        /// </summary>
+        internal static string ReportClientCountry {
+            get {
+                return ResourceManager.GetString("ReportClientCountry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Client information.
+        /// </summary>
+        internal static string ReportClientDetailsHeader {
+            get {
+                return ResourceManager.GetString("ReportClientDetailsHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ID document.
+        /// </summary>
+        internal static string ReportClientDocument {
+            get {
+                return ResourceManager.GetString("ReportClientDocument", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ID document number.
+        /// </summary>
+        internal static string ReportClientDocumentNumber {
+            get {
+                return ResourceManager.GetString("ReportClientDocumentNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Client email.
+        /// </summary>
+        internal static string ReportClientEmail {
+            get {
+                return ResourceManager.GetString("ReportClientEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Client name.
+        /// </summary>
+        internal static string ReportClientName {
+            get {
+                return ResourceManager.GetString("ReportClientName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Client number.
+        /// </summary>
+        internal static string ReportClientNumber {
+            get {
+                return ResourceManager.GetString("ReportClientNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Client phone number.
+        /// </summary>
+        internal static string ReportClientPhone {
+            get {
+                return ResourceManager.GetString("ReportClientPhone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Report details.
+        /// </summary>
+        internal static string ReportDetail {
+            get {
+                return ResourceManager.GetString("ReportDetail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Report Details.
+        /// </summary>
+        internal static string ReportDetailsHeader {
+            get {
+                return ResourceManager.GetString("ReportDetailsHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Photos.
+        /// </summary>
+        internal static string ReportPhotosHeader {
+            get {
+                return ResourceManager.GetString("ReportPhotosHeader", resourceCulture);
             }
         }
         
@@ -647,6 +773,60 @@ namespace MauiInteligente2022.Localization {
         internal static string TermsPageTitle {
             get {
                 return ResourceManager.GetString("TermsPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This value must be a valid email.
+        /// </summary>
+        internal static string ValidationsEmail {
+            get {
+                return ResourceManager.GetString("ValidationsEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This value must be a {0} characters value.
+        /// </summary>
+        internal static string ValidationsExactLength {
+            get {
+                return ResourceManager.GetString("ValidationsExactLength", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This value must be greater than {0}.
+        /// </summary>
+        internal static string ValidationsGreater {
+            get {
+                return ResourceManager.GetString("ValidationsGreater", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This value must have less than {0} characters.
+        /// </summary>
+        internal static string ValidationsMaxLength {
+            get {
+                return ResourceManager.GetString("ValidationsMaxLength", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This field must have a value.
+        /// </summary>
+        internal static string ValidationsNull {
+            get {
+                return ResourceManager.GetString("ValidationsNull", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This value must be a valid phone number.
+        /// </summary>
+        internal static string ValidationsPhone {
+            get {
+                return ResourceManager.GetString("ValidationsPhone", resourceCulture);
             }
         }
     }
