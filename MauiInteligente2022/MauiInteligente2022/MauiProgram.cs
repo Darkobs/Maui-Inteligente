@@ -59,6 +59,9 @@ public static class MauiProgram
 						.AddTransient<NewReportStep1ViewModel>()
                         .AddTransient<NewReportStep2Page>()
                         .AddTransient<NewReportStep2ViewModel>()
+                        .AddTransient<NewReportStep3Page>()
+                        .AddTransient<NewReportStep3ViewModel>()
+                        .AddTransient<ReportSummaryViewModel>()
                         .AddTransient<PreviewPhotoPage>()
 						.AddTransient<PreviewPhotoViewModel>();
 
@@ -77,6 +80,12 @@ public static class MauiProgram
 		{
             client.Timeout = TimeSpan.FromSeconds(int.Parse(builder.Configuration["Api:Timeout"]));
             client.BaseAddress = new($"{builder.Configuration["Api:Uri"]}{builder.Configuration["Api:Branches"]}");
+        });
+
+        builder.Services.AddHttpClient<CountriesRestServices>(client =>
+        {
+            client.Timeout = TimeSpan.FromSeconds(int.Parse(builder.Configuration["Api:Timeout"]));
+            client.BaseAddress = new($"{builder.Configuration["Api:Uri"]}{builder.Configuration["Api:Countries"]}");
         });
 
         builder.Services.AddHttpClient<LoginViewModel>(client =>

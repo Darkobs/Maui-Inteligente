@@ -151,6 +151,33 @@ namespace MauiInteligente2022.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Personal Country ID.
+        /// </summary>
+        internal static string DocumentCatalogCountryID {
+            get {
+                return ResourceManager.GetString("DocumentCatalogCountryID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Driver&apos;s License.
+        /// </summary>
+        internal static string DocumentCatalogDriversLicense {
+            get {
+                return ResourceManager.GetString("DocumentCatalogDriversLicense", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Passport.
+        /// </summary>
+        internal static string DocumentsCatalogPassport {
+            get {
+                return ResourceManager.GetString("DocumentsCatalogPassport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Error.
         /// </summary>
         internal static string ErrorMessage {

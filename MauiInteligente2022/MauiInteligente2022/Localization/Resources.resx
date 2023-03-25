@@ -377,4 +377,16 @@
   <data name="ReportDetailsHeader" xml:space="preserve">
     <value>Report Details</value>
   </data>
+  <data name="DocumentCatalogCountryID" xml:space="preserve">
+    <value>Personal Country ID</value>
+  </data>
+  <data name="DocumentCatalogDriversLicense" xml:space="preserve">
+    <value>Driver's License</value>
+  </data>
+  <data name="DocumentsCatalogPassport" xml:space="preserve">
+    <value>Passport</value>
+  </data>
+  
+  <data name="ReportPhotosHeader" xml:space="preserve">    <value>Photos</value>    <comment/>  </data>  <data name="ReportClientDetailsHeader" xml:space="preserve">    <value>Client information</value>    <comment/>  </data>  <data name="ReportDetailsHeader" xml:space="preserve">    <value>Report Details</value>    <comment/>  </data>  <data name="SendTrxDescription" xml:space="preserve">    <value>Would you like to send the report?</value>    <comment/>  </data>  <data name="CompletedTransaction" xml:space="preserve">    <value>The transaction was sended successfully</value>    <comment/>  </data>  <data name="SavedLocallyTransaction" xml:space="preserve">    <value>Error sending transaction, the transaction was saved locally.</value>    <comment/>  </data>  <data name="SendTrxPending" xml:space="preserve">    <value>Sync proccess finished. {0} pending transactions.</value>    <comment/>  </data>  <data name="SendTrxTitle" xml:space="preserve">    <value>Finish Report</value>    <comment/>  </data>  <data name="Cancel" xml:space="preserve">    <value>Cancel</value>    <comment/>  </data>
+  
 </root>

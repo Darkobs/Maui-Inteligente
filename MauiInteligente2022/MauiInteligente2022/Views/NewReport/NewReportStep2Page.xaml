@@ -18,9 +18,56 @@
 
             <controls:ErrorValidationEntry IsObligatory="True" Keyboard="Numeric" 
                                            Text="{Binding ClientNumber}" 
-                                           IsValid="{Binding ClientDocumentNumberValidator.IsValid}"
+                                           Placeholder="{x:Static res:Resources.ReportClientNumber}"
+                                           IsValid="{Binding ClientNumberValidator.IsValid}"
                                            ErrorDescription="{Binding ClientNumberValidator.ErrorMessage}" />
-            
+
+            <controls:ErrorValidationEntry IsObligatory="True" 
+                                           Text="{Binding ClientName}" 
+                                           Placeholder="{x:Static res:Resources.ReportClientName}"
+                                           IsValid="{Binding ClientNameValidator.IsValid}"
+                                           ErrorDescription="{Binding ClientNameValidator.ErrorMessage}" />
+
+            <controls:ErrorValidationEntry IsObligatory="True" Keyboard="Email"
+                                           Text="{Binding ClientEmail}" 
+                                           Placeholder="{x:Static res:Resources.ReportClientEmail}"
+                                           IsValid="{Binding ClientEmailValidator.IsValid}"
+                                           ErrorDescription="{Binding ClientEmailValidator.ErrorMessage}" />
+
+            <controls:ErrorValidationEntry IsObligatory="True" Keyboard="Telephone"
+                                           Text="{Binding ClientPhoneNumber}" 
+                                           Placeholder="{x:Static res:Resources.ReportClientPhone}"
+                                           IsValid="{Binding ClientPhoneNumberValidator.IsValid}"
+                                           ErrorDescription="{Binding ClientPhoneNumberValidator.ErrorMessage}" />
+
+            <controls:AutoCompleteView IsObligatory="True"
+                                       Placeholder="{x:Static res:Resources.ReportClientCountry}"
+                                       Suggestions="{Binding Countries}"
+                                       SelectedItem="{Binding SelectedCountry}"
+                                       ShowSearchButton="False"
+                                       IsValid="{Binding ClientCountryValidator.IsValid}"
+                                       />
+
+            <controls:ErrorValidationEntry IsObligatory="True" 
+                                           Text="{Binding ClientCity}" 
+                                           Placeholder="{x:Static res:Resources.ReportClientCity}"
+                                           IsValid="{Binding ClientCityValidator.IsValid}"
+                                           ErrorDescription="{Binding ClientCityValidator.ErrorMessage}" />
+
+            <controls:ErrorValidationPicker IsObligatory="True"
+                                            Title="{x:Static res:Resources.ReportClientDocument}"
+                                            ItemsSource="{Binding Documents}"
+                                            SelectedItem="{Binding SelectedDocument}"
+                                            IsValid="{Binding ClientDocumentValidator.IsValid}"
+                                            ErrorDescription="{Binding ClientDocumentValidator.ErrorMessage}" />
+
+            <controls:ErrorValidationEntry IsObligatory="True" 
+                                           Text="{Binding ClientDocumentNumber}" 
+                                           Placeholder="{x:Static res:Resources.ReportClientDocumentNumber}"
+                                           IsValid="{Binding ClientDocumentNumberValidator.IsValid}"
+                                           ErrorDescription="{Binding ClientDocumentNumberValidator.ErrorMessage}" />
+
+            <Label HeightRequest="300" />
 
         </VerticalStackLayout>
     </ScrollView>

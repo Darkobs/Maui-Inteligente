@@ -15,4 +15,5 @@ public static class PageIds
     public const string PREVIEW_PHOTO = "10";
     public const string NEW_REPORT_STEP_2 = "11";
     public const string NEW_REPORT_STEP_3 = "12";
+    public const string NEW_REPORT_SUMMARY = "13";
 }

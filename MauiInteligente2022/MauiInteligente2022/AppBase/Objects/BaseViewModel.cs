@@ -48,4 +48,19 @@ public abstract class BaseViewModel : ObservableObject, IQueryAttributable
     {
         
     }
+
+    private Dictionary<String, object> navigationParametersToSend;
+
+    protected Dictionary<String, object> NavigationParametersToSend
+    {
+        get
+        {
+            if (navigationParametersToSend is null) 
+            {
+                navigationParametersToSend = new();
+            }
+
+            return navigationParametersToSend;
+        }
+    }
 }

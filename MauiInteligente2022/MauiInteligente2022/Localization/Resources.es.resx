@@ -320,5 +320,72 @@
   <data name="TermsPageTitle" xml:space="preserve">
     <value>Términos y condiciones</value>
   </data>
-  <data name="ValidationsGreater" xml:space="preserve">    <value>EL valor tiene que ser mayor a {0}</value>    <comment/>  </data>  <data name="ValidationsEmail" xml:space="preserve">    <value>El valor debe ser un correo electrónico</value>    <comment/>  </data>  <data name="ValidationsExactLength" xml:space="preserve">    <value>El valor debe tener una longitud de {0} caracteres</value>    <comment/>  </data>  <data name="ValidationsMaxLength" xml:space="preserve">    <value>Este valor debe tener menos de {0} caracteres</value>    <comment/>  </data>  <data name="ValidationsNull" xml:space="preserve">    <value>Este campo debe tener un valor</value>    <comment/>  </data>  <data name="ValidationsPhone" xml:space="preserve">    <value>Este valor debe ser un número telefónico</value>    <comment/>  </data>  <data name="ReportClientNumber" xml:space="preserve">    <value>Número de cliente</value>    <comment/>  </data>  <data name="ReportClientName" xml:space="preserve">    <value>Nombre del cliente</value>    <comment/>  </data>  <data name="ReportClientEmail" xml:space="preserve">    <value>Correo electrónico del cliente</value>    <comment/>  </data>  <data name="ReportClientPhone" xml:space="preserve">    <value>Telefóno del cliente</value>    <comment/>  </data>  <data name="ReportClientCountry" xml:space="preserve">    <value>País del cliente</value>    <comment/>  </data>  <data name="ReportClientCity" xml:space="preserve">    <value>Ciudad del cliente</value>    <comment/>  </data>  <data name="ReportClientDocument" xml:space="preserve">    <value>Documento de identidad</value>    <comment/>  </data>  <data name="ReportClientDocumentNumber" xml:space="preserve">    <value>Número del documento de identidad</value>    <comment/>  </data>  <data name="ReportDetail" xml:space="preserve">    <value>Detalles del reporte</value>    <comment/>  </data>  <data name="ReportAmount" xml:space="preserve">    <value>Monto total</value>    <comment/>  </data>  <data name="ReportPhotosHeader" xml:space="preserve">    <value>Fotos</value>    <comment/>  </data>  <data name="ReportClientDetailsHeader" xml:space="preserve">    <value>Información del cliente</value>    <comment/>  </data>  <data name="ReportDetailsHeader" xml:space="preserve">    <value>Detalles del reporte</value>    <comment/>  </data>
+  <data name="ValidationsGreater" xml:space="preserve">
+    <value>EL valor tiene que ser mayor a {0}</value>
+  </data>
+  <data name="ValidationsEmail" xml:space="preserve">
+    <value>El valor debe ser un correo electrónico</value>
+  </data>
+  <data name="ValidationsExactLength" xml:space="preserve">
+    <value>El valor debe tener una longitud de {0} caracteres</value>
+  </data>
+  <data name="ValidationsMaxLength" xml:space="preserve">
+    <value>Este valor debe tener menos de {0} caracteres</value>
+  </data>
+  <data name="ValidationsNull" xml:space="preserve">
+    <value>Este campo debe tener un valor</value>
+  </data>
+  <data name="ValidationsPhone" xml:space="preserve">
+    <value>Este valor debe ser un número telefónico</value>
+  </data>
+  <data name="ReportClientNumber" xml:space="preserve">
+    <value>Número de cliente</value>
+  </data>
+  <data name="ReportClientName" xml:space="preserve">
+    <value>Nombre del cliente</value>
+  </data>
+  <data name="ReportClientEmail" xml:space="preserve">
+    <value>Correo electrónico del cliente</value>
+  </data>
+  <data name="ReportClientPhone" xml:space="preserve">
+    <value>Telefóno del cliente</value>
+  </data>
+  <data name="ReportClientCountry" xml:space="preserve">
+    <value>País del cliente</value>
+  </data>
+  <data name="ReportClientCity" xml:space="preserve">
+    <value>Ciudad del cliente</value>
+  </data>
+  <data name="ReportClientDocument" xml:space="preserve">
+    <value>Documento de identidad</value>
+  </data>
+  <data name="ReportClientDocumentNumber" xml:space="preserve">
+    <value>Número del documento de identidad</value>
+  </data>
+  <data name="ReportDetail" xml:space="preserve">
+    <value>Detalles del reporte</value>
+  </data>
+  <data name="ReportAmount" xml:space="preserve">
+    <value>Monto total</value>
+  </data>
+  <data name="ReportPhotosHeader" xml:space="preserve">
+    <value>Fotos</value>
+  </data>
+  <data name="ReportClientDetailsHeader" xml:space="preserve">
+    <value>Información del cliente</value>
+  </data>
+  <data name="ReportDetailsHeader" xml:space="preserve">
+    <value>Detalles del reporte</value>
+  </data>
+  <data name="DocumentCatalogCountryID" xml:space="preserve">
+    <value>Documento Personal de Identidad</value>
+  </data>
+  <data name="DocumentCatalogDriversLicense" xml:space="preserve">
+    <value>Licencia de Conducir</value>
+  </data>
+  <data name="DocumentsCatalogPassport" xml:space="preserve">
+    <value>Pasaporte</value>
+  </data>
+  
+  <data name="ReportPhotosHeader" xml:space="preserve">    <value>Fotos</value>    <comment/>  </data>  <data name="ReportClientDetailsHeader" xml:space="preserve">    <value>Información del cliente</value>    <comment/>  </data>  <data name="ReportDetailsHeader" xml:space="preserve">    <value>Detalles del reporte</value>    <comment/>  </data>  <data name="SendTrxDescription" xml:space="preserve">    <value>¿Quieres enviar el reporte?</value>    <comment/>  </data>  <data name="CompletedTransaction" xml:space="preserve">    <value>El reporte se envió correctamente</value>    <comment/>  </data>  <data name="SavedLocallyTransaction" xml:space="preserve">    <value>Error al enviar, el reporte quedó almacenado en el dispositivo.</value>    <comment/>  </data>  <data name="SendTrxPending" xml:space="preserve">    <value>Sincronización finalizada. {0} reportes pendientes.</value>    <comment/>  </data>  <data name="SendTrxTitle" xml:space="preserve">    <value>Finalizar Reporte</value>    <comment/>  </data>  <data name="SendTrxTitle" xml:space="preserve">    <value>Cancelar</value>    <comment/>  </data>
 </root>
